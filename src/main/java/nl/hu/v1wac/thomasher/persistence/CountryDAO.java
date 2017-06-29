@@ -31,7 +31,6 @@ public class CountryDAO extends BaseDAO {
             stmt.setString(12, country.getCapital());
 
             int affectedRows = stmt.executeUpdate();
-//            if (affectedRows == 1) return country;
         } catch (SQLException sqle) {
             sqle.printStackTrace();
         }
