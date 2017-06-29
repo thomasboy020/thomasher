@@ -1,0 +1,181 @@
+html, body {
+	font-family: Sans-Serif;
+	background-color: dimgray;
+}
+
+#myLocation label {
+	display: inline-block;
+	width: 95px;
+}
+
+#weatherInfo label {
+	display: inline-block;
+	width: 140px;
+}
+
+table {
+	width: calc(100% - 14px);
+	font-size: 14px;
+	text-align: left;
+	padding: 5px;
+	line-height: 20px;
+	border-collapse: collapse;
+	margin: 7px;
+}
+
+tr:hover:not(:first-of-type) {
+	background-color: #b3e9ff;
+}
+
+tr:hover {
+	cursor: pointer;
+}
+
+tr:nth-child(even) {
+	background-color: white;
+}
+
+tr:nth-child(odd) {
+	background-color: white;
+}
+
+tr:first-child {
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.delete {
+	font-size: 22px;
+}
+
+
+
+
+.weatherDiv {
+	height: 40px;
+	color: white;
+	border-radius: 2px;
+	margin: 15px 0;
+}
+
+.weatherDiv h4 {
+	float: left;
+	margin: 0;
+	padding-left: 10px;
+	line-height: 40px;
+}
+
+.weatherDiv span {
+	float: right;
+	margin: 0 10px 0 0;
+	line-height: 40px;
+	padding: 4px;
+	top: -4px;
+}
+
+#searchInput {
+	float: right;
+	margin: 7px 0 0 0;
+	height: 26px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #b3b3b3;
+    text-indent: 10px;
+	
+	
+}
+
+#add_country {
+	float: right;
+	height: 26px;
+	margin: 10px 0 0 0;
+
+}
+
+#search {
+	height: 40px;
+	margin: -15px 0 0 0;
+
+
+}
+
+
+
+#tableDiv {
+	overflow-x:auto;
+}
+
+table td{
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 700px) {
+	.container {
+		display: grid;
+		grid-template-columns: 40% 1fr;
+  		grid-template-rows: auto;
+  		grid-column-gap: 10px;
+		}
+		
+	#myLocation {
+		grid-column-start: 1;
+  		grid-column-end: 2;
+	}
+	
+	#weatherInfo {
+		grid-column-start: 2;
+  		grid-column-end: 3;
+	}
+}
+
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+	background-color: dimgray;
+	color:white;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+
+#close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	top: 0;
+}
+
+#close:hover,
+#close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#inputContainer {
+	padding: 10px;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.inputRow {
+	flex: 1;
+	width: calc(50% - 10px);
+	padding: 5px;
+}
