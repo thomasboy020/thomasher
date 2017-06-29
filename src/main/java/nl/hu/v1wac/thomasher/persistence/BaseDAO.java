@@ -39,26 +39,3 @@ public class BaseDAO {
     }
 }
 
-//public class BaseDAO {
-//    private DataSource connectionPool;
-//    public BaseDAO() {
-//        try {
-//            final String DATABASE_URL_PROP = System.getenv("localhost:3306");
-//            String dbUrl = "jdbc:postgresql://localhost:5432/wacherkansing?user=postgres&password=thomasajax";
-//            BasicDataSource pool = new BasicDataSource();
-//            pool.setDriverClassName("org.postgresql.Driver");
-//            pool.setUrl(dbUrl);
-//            pool.setInitialSize(1);
-//            connectionPool = pool;
-//        } catch (Exception e) {
-//            throw new RuntimeException(e);
-//        }
-//    }
-//    protected final Connection getConnection() {
-//        try {
-//            return connectionPool.getConnection();
-//        } catch (Exception ex) {
-//            throw new RuntimeException(ex);
-//        }
-//    }
-//}
