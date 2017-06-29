@@ -17,7 +17,7 @@ table {
 	width: 100%;
 	font-size: 14px;
 	text-align: left;
-	background-color: #B0ACA4;
+	background-color: blue;
 	padding: 5px;
 	line-height: 20px;
 }
@@ -33,7 +33,7 @@ tr:hover {
 
 
 .weatherDiv {
-	background-color: #A0998D;
+	background-color: skyblue;
 	height: 40px;
 	color: white;
 	border-radius: 2px;
